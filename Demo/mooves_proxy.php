@@ -3,22 +3,22 @@
  * @script: proxy.php
  * @name: MooVES Proxy Thumbnailer
  * @description: A simple proxy thumbnailer for MooVES
- * @website: FirebUntU <http://firebuntu.com/>
+ * @website: FirebUntU <http://www.firebuntu.com/>
  * @last-update: 2010-10-24
  * @version: 1.0
  *
- * @author: FirebUntU <l.laureti@syn-ergo.com>
- * @copyright: 2010 FirebUntU, <http://firebuntu.com/>
+ * @author: FirebUntU <info@firebuntu.com>
+ * @copyright: 2010 Leonardo Laureti, <http://mooves.firebuntu.com/>
  * @license: MIT-style License <http://www.opensource.org/licenses/mit-license.php>
  *
- * Dependencies:
- * 	PHP 5+
- * 	SimpleXML
+ * @requires:
+ * 	- PHP 5+
+ * 	- simplexml
 */
 
 error_reporting(0);
+ini_set("allow_url_fopen", "on");
 set_time_limit(2);
-ini_set("enable_functions", "simplexml, file_get_contents");
 
 function error(){ echo "error"; }
 

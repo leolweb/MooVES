@@ -50,7 +50,5 @@ Known issues
 ------------
 
 Vimeo: HTML5 does not work without Flash installed
-
 Blip.tv: HTML5 method does not work due to JavaScript errors
-
 

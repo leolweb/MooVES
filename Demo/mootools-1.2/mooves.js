@@ -1,23 +1,21 @@
-/**
- * @script: mooves.js
- * @name: MooVES
- * @description: The MooTools Video Enhancement System
- * @website: FirebUntU <http://www.firebuntu.com/>
- * @last-update: 2010-10-24
- * @version: 1.0
- * @requirements: MooTools 1.2+ Core [Element.Event, Element.Style, DomReady, Swiff, Fx.Morph, Request]
- *
- * 88888b.d88b. .d88b. .d88b. 888  8888888888.d8888b
- *  88 "888 "88d88""88b88""88b888  88888     88K    
- *  88  888  88888  88888  888Y88  888888888 Y8888b.
- *  88  888  88Y88.P88Y88.P88P Y8bd8P888         X88
- *  88  888  88 "Y88P" "Y88P"   Y88P 8888888888888P'
- *
- * Current MooTools version: 1.2.5 stable <http://www.mootools.net/>
- *
- * @author: Leonardo Laureti <info@firebuntu.com>
- * @copyright: 2010 FirebUntU, <http://www.firebuntu.com/>
- * @license: MIT-style License <http://www.opensource.org/licenses/mit-license.php>
+/*
+---
+script: mooves.js
+name: MooVES
+decription: The MooTools Video Enhancement System
+license: MIT-style license.
+copyright: Copyright (c) 2010 [Leonardo Laureti](http://mooves.firebuntu.com/).
+authors: FirebUntU (http://firebuntu.com/)
+requires:
+core:1.2.5:
+- Class.Extras
+- Element.Event
+- Element.Style
+- Swiff
+- Fx.Morph
+- Request
+provides: [MooVES]
+...
 */
 
 Hash.extend({
@@ -721,7 +719,7 @@ MooVES = new Class({
   provider: function(){
     this.parent();
     var MyPlayer = function(){
-      if(this.url.match(/mooves\.firebuntu\.com/i)) return this.MyPlayer();
+      if(this.url.match(/mooves\.local/i)) return this.MyPlayer();
     }.bind(this);
     $extend(this, MyPlayer());
     return this;
@@ -730,8 +728,8 @@ MooVES = new Class({
     var video = this.url.split('/')[3].split('.')[0];
     var autoplay = this.options.autoplay?1:0;
     var data = {
-      flash: 'http://firebuntu.mooves.com/swiff/player_flv_mini_0.2.1.swf',
-      thumbnail: 'http://firebuntu.mooves.com/videos/' + video + '.jpg',
+      flash: '/assets/swiff/player_flv_mini_0.2.1.swf',
+      thumbnail: '/assets/videos/' + video + '.jpg',
       width: this.options.width,
       height: this.options.height,
       flashvars: {
@@ -746,15 +744,15 @@ MooVES = new Class({
       html5_ext: ['webm','ogg','mp4'],
       html5_src: {
         'mp4': {
-          src: 'http://firebuntu.mooves.com/videos/' + video + '.mp4',
+          src: '/assets/videos/' + video + '.mp4',
           type: 'video/mp4'
         },
         'webm': {
-          src: 'http://firebuntu.mooves.com/videos/' + video + '.webm',
+          src: '/assets/videos/' + video + '.webm',
           type: 'video/webm'
         },
         'ogg': {
-          src: 'http://firebuntu.mooves.com/videos/' + video + '.ogv',
+          src: '/assets/videos/' + video + '.ogv',
           type: 'video/ogg'
         }
       }
