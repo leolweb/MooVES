@@ -721,7 +721,7 @@ MooVES = new Class({
   provider: function(){
     this.parent();
     var MyPlayer = function(){
-      if(this.url.match(/mooves\.local/i)) return this.MyPlayer();
+      if(this.url.match(/mooves\.firebuntu\.com/i)) return this.MyPlayer();
     }.bind(this);
     $extend(this, MyPlayer());
     return this;
@@ -730,8 +730,8 @@ MooVES = new Class({
     var video = this.url.split('/')[3].split('.')[0];
     var autoplay = this.options.autoplay?1:0;
     var data = {
-      flash: '/assets/swiff/player_flv_mini_0.2.1.swf',
-      thumbnail: '/assets/videos/' + video + '.jpg',
+      flash: 'http://firebuntu.mooves.com/swiff/player_flv_mini_0.2.1.swf',
+      thumbnail: 'http://firebuntu.mooves.com/videos/' + video + '.jpg',
       width: this.options.width,
       height: this.options.height,
       flashvars: {
@@ -746,15 +746,15 @@ MooVES = new Class({
       html5_ext: ['webm','ogg','mp4'],
       html5_src: {
         'mp4': {
-          src: '/assets/videos/' + video + '.mp4',
+          src: 'http://firebuntu.mooves.com/videos/' + video + '.mp4',
           type: 'video/mp4'
         },
         'webm': {
-          src: '/assets/videos/' + video + '.webm',
+          src: 'http://firebuntu.mooves.com/videos/' + video + '.webm',
           type: 'video/webm'
         },
         'ogg': {
-          src: '/assets/videos/' + video + '.ogv',
+          src: 'http://firebuntu.mooves.com/videos/' + video + '.ogv',
           type: 'video/ogg'
         }
       }
