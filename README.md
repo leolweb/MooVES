@@ -7,7 +7,7 @@ The plug-in is unobtrusive and displays the link to the video and a notice messa
 
 The class is extensible, you can integrate other video sharing websites and network. It is completely customizable, thanks also to the advantage of an Open Source license.
 
-![Screenshot](http://mooves.firebuntu.com/assets/images/mooves-screenshot.png)
+![Screenshot](http://mooves.firebuntu.com/assets/images/mooves_logo.png)
 
 
 
@@ -50,5 +50,7 @@ Known issues
 ------------
 
 Vimeo: HTML5 does not work without Flash installed
+
 Blip.tv: HTML5 method does not work due to JavaScript errors
+
 
