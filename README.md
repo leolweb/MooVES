@@ -1,7 +1,7 @@
 MooVES
 ======
 
-MooVES is The MooTools Video Enhancement System, a plug-in for MooTools which allows a preview video from many video types. It supports also HTML5 video tag features (beta).
+MooVES is The MooTools Video Enhancement System, a plug-in for MooTools (1.2+ or 1.3+) which allows a preview video from many video types. It supports also HTML5 video tag features (beta).
 
 The plug-in is unobtrusive and displays the link to the video and a notice message when JavaScript or Adobe Flash Player are not enabled in the user's system.
 
