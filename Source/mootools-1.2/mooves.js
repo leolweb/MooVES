@@ -134,7 +134,7 @@ var MooVES = new Class({
 					data.html5_src.each(function(source){
 						new Element('source', {src: source.src, type: source.type}).inject(video);
 					});
-				}
+				};
 				break;
 			case 'iframe':
 				var video = new Element('iframe', {
@@ -231,7 +231,7 @@ var MooVES = new Class({
 		  if(ext.contains('webm') && video.canPlayType('video/webm; codecs="vp8, vorbis"')) check.push('webm');
 		  if(ext.contains('mp4') && video.canPlayType('video/mp4; codecs="avc1.42E01E, mp4a.40.2"')) check.push('mp4');
 		  if(ext.contains('ogg') && video.canPlayType('video/ogg; codecs="theora, vorbis"')) check.push('ogg');
-		}
+		};
 		if(check != 0) return check;
 	}
 });
@@ -358,7 +358,7 @@ MooVES = new Class({
     var data = {
       id: id[4].split('_')[0],
       flash: 'http://www.dailymotion.com/swf/' + id[4].split('_')[0] + options,
-      thumbnail: 'http://www.dailymotion.com/thumbnail/320x240/video/' + id[4],
+      thumbnail: 'http://www.dailymotion.com/thumbnail/480x360/video/' + id[4],
       width: this.options.width,
       height: this.options.height,
       flashvars: {},

@@ -67,7 +67,7 @@ if(isset($_GET["server"]) && isset($_GET["id"])){
 			$url = "http://vimeo.com/api/clip/".$id."/php";
 			$file = file_get_contents($url);
 			empty($file) ? error() : $query = unserialize($file);
-			$thumbnail = $query[0]["thumbnail_medium"];
+			$thumbnail = $query[0]["thumbnail_large"];
 			break;
 	}
 	if(isset($thumbnail)) echo $thumbnail;
