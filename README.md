@@ -12,7 +12,7 @@ The class is extensible, you can integrate other video sharing websites and netw
 How to Use
 ----------
 
-This is a simple usage example. For more specific usage and options read the documentation at [http://mooves.firebuntu.com](http://mooves.firebuntu.com)
+This is a simple usage example.
 
 
 	#HTML
